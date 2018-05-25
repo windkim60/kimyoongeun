@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="stylesheet" type="text/css" media="screen, projection"
+      href="screen.css" />
+  
+	  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+	  
+    <script type="text/javascript" src="login.js"></script>
+	
+	<script type="text/javascript"  src="SubUtil.js" > </script>
+	
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type='text/javascript' src='datepicker.js'></script>
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+  
+    <style type="text/css">
+      #loginContent { width: 350px; margin: 100px auto; }
+      button[type] { margin: 0.5em 0; }
+    </style>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+    <title>Very simple Test using Perl, jQuery, Ajax, JSON</title>
+ 
+	
+  </head>
+  
+  <body onload="myFunction()">
+
+      <!--   <div id="loginResult" style="display:none">  </div> -->
+	  
+      <div id="loginContent" class="container"  >
+
+	      
+	 
+	    <div id="Content1" class="container"  style="display:none">
+		
+		    <input type="button"  onclick="newbutclick()"  id="newbut" value="New" style='margin-right:16px height:450px;width:200px'" />
+
+			<p id="errorid"></p>
+			
+			<!-- <b>    Enter Appointment:   </b>
+			
+			<input type="text" name="uname" />
+		   
+			<input  value="Search" type="button"  onclick="newtable()" />
+
+			<br><br>
+			<hr size="20">
+
+			<br><br><br> -->
+         </div>   <!--  Content1    -->
+		  
+		  
+		<div id="Content2" class="container" style="display:none" >
+			<div id="topdiv" class="container">
+			
+				<div id="bottomdiv" style="display:none;">  </div>
+		
+				<div class='myDiv'>
+					<button id="add" value="add" type="submit" onclick="newelement()"  style='margin-right:16px  height:450px;width:200px'>Add</button>
+				
+				    <button id="cancel" value="Cancel" type="submit" onclick="cancelclick()" style='margin-right:16px  height:450px;width:200px'>Cancel</button>
+
+					<br><br><br><br>
+				</div>
+			
+				<div id="header1">
+					<fieldset style='  height:200px;width:200px'>
+						<legend>Enter information</legend>
+				
+						<p>Date: <input type="text" id="datepicker" onfocus="myDate()" >   <span></span>  </p>
+						<p>Time: <input type="text" id="timepicker"  onfocus="myTime()" >   <span></span> </p>
+						<p>Description: <input type="text" id="description"></p>
+					</fieldset>
+					<br><br><br><br>
+				</div>
+	
+<!-- 				<input type="text" id="searchtext"  name="searchtext"  placeholder="enter the searching pattern" style='margin-right:16px height:450px;width:200px' " />
+			
+                <button id="search" value="Search" onclick="newsearchtable()" style='margin-right:16px height:450px;width:200px' >Search</button> -->
+			</div>
+	
+			<div id="seconddiv">
+				<br><br><br><br>
+				<table style="width:100%"id="mytable" >	</table>
+			</div>
+	 </div>   <!--  Content2    -->
+	 
+	 <div id="Content3" class="container" >
+	    <b>    Enter Appointment:   </b>
+			
+		<input type="text" id="searchtext"  name="searchtext" />
+		   
+		<input  value="Search" type="button"  onclick="newtable()" />
+
+		<br><br>
+		<hr size="20">
+
+		<br><br><br>
+	 </div>   <!--  Content3    -->
+	  
+		
+	  
+     </div>   <!--  loginContent    -->
+
+	
+	 
+  </body>
+</html>
